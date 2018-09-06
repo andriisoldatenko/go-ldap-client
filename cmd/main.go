@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/jtblin/go-ldap-client"
+	"github.com/andriisoldatenko/go-ldap-client"
 )
 
 var base, bindDN, bindPassword, groupFilter, host, password, serverName, userFilter, username string
@@ -22,7 +22,6 @@ func main() {
 		Host:         host,
 		Port:         port,
 		UseSSL:       useSSL,
-		SkipTLS:      skipTLS,
 		BindDN:       bindDN,
 		BindPassword: bindPassword,
 		UserFilter:   userFilter,

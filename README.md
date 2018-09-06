@@ -4,7 +4,7 @@ Simple ldap client to authenticate, retrieve basic information and groups for a 
 
 # Usage
 
-[Go Doc](https://godoc.org/github.com/jtblin/go-ldap-client)
+[Go Doc](https://godoc.org/github.com/andriisoldatenko/go-ldap-client)
 
 See [example](example_test.go). The only external dependency is [gopkg.in/ldap.v2](http://gopkg.in/ldap.v2).
 
@@ -14,7 +14,7 @@ package main
 import (
 	"log"
 
-	"github.com/jtblin/go-ldap-client"
+	"github.com/andriisoldatenko/go-ldap-client"
 )
 
 func main() {

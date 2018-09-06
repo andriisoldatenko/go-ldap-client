@@ -152,7 +152,7 @@ func (lc *LDAPClient) GetGroupsOfUser(username string) ([]string, error) {
 	if err != nil {
 		return nil, err
 	}
-	groups := []string{}
+	var groups []string
 	for _, entry := range sr.Entries {
 		groups = append(groups, entry.GetAttributeValue("cn"))
 	}
